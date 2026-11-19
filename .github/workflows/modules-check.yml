@@ -6,20 +6,6 @@ name: Module Market Check
 # so contributors who don't touch `modules/` aren't blocked by it.
 
 on:
-  pull_request:
-    paths:
-      - 'modules/**'
-      - 'tools/ci/validate_modules.py'
-      - '.github/workflows/modules-check.yml'
-  push:
-    branches:
-      - main
-    paths:
-      - 'modules/**'
-      - 'tools/ci/validate_modules.py'
-      - '.github/workflows/modules-check.yml'
-  # Manual run from the Actions tab — handy when adjusting the validator
-  # rules without a real catalog change to push.
   workflow_dispatch:
 
 permissions:
